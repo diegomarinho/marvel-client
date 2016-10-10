@@ -10,9 +10,9 @@ import org.springframework.cache.annotation.EnableCaching;
  */
 @SpringBootApplication
 @EnableCaching
-public class MarvelsApiOrchestratorApplication {
+public class MarvelsApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MarvelsApiOrchestratorApplication.class, args);
+		SpringApplication.run(MarvelsApp.class, args);
 	}
 }
