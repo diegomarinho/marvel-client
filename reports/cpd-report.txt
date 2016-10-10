@@ -1,0 +1,166 @@
+Found a 14 line (47 tokens) duplication in the following files: 
+Starting at line 20 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CharacterDataWrapper.java
+Starting at line 20 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\ComicDataWrapper.java
+
+public class CharacterDataWrapper {
+
+    @JsonProperty("code")
+    public int code;
+    @JsonProperty("status")
+    public String status;
+    @JsonProperty("copyright")
+    public String copyright;
+    @JsonProperty("attributionText")
+    public String attributionText;
+    @JsonProperty("attributionHTML")
+    public String attributionHTML;
+    @JsonProperty("data")
+    public CharacterDataContainer data;
+=====================================================================
+Found a 12 line (41 tokens) duplication in the following files: 
+Starting at line 20 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CharacterDataContainer.java
+Starting at line 20 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\ComicDataContainer.java
+
+public class CharacterDataContainer {
+
+    @JsonProperty("offset")
+    public int offset;
+    @JsonProperty("limit")
+    public int limit;
+    @JsonProperty("total")
+    public int total;
+    @JsonProperty("count")
+    public int count;
+    @JsonProperty("results")
+    public List<Character> results = new ArrayList<Character>();
+=====================================================================
+Found a 12 line (35 tokens) duplication in the following files: 
+Starting at line 9 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CharacterDataWrapper.java
+Starting at line 9 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\ComicDataWrapper.java
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Generated("org.jsonschema2pojo")
+@JsonPropertyOrder({
+    "code",
+    "status",
+    "copyright",
+    "attributionText",
+    "attributionHTML",
+    "data",
+    "etag"
+})
+public class CharacterDataWrapper {
+=====================================================================
+Found a 10 line (33 tokens) duplication in the following files: 
+Starting at line 19 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CharacterList.java
+Starting at line 19 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\ComicList.java
+Starting at line 19 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CreatorList.java
+Starting at line 19 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\EventList.java
+Starting at line 19 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\SeriesList.java
+Starting at line 19 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\StorieList.java
+
+public class CharacterList {
+
+    @JsonProperty("available")
+    public int available;
+    @JsonProperty("returned")
+    public int returned;
+    @JsonProperty("collectionURI")
+    public String collectionURI;
+    @JsonProperty("items")
+    public List<CharacterSummary> items = new ArrayList<CharacterSummary>();
+=====================================================================
+Found a 10 line (31 tokens) duplication in the following files: 
+Starting at line 11 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CharacterDataContainer.java
+Starting at line 11 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\ComicDataContainer.java
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Generated("org.jsonschema2pojo")
+@JsonPropertyOrder({
+    "offset",
+    "limit",
+    "total",
+    "count",
+    "results"
+})
+public class CharacterDataContainer {
+=====================================================================
+Found a 5 line (30 tokens) duplication in the following files: 
+Starting at line 36 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\Character.java
+Starting at line 76 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\Comic.java
+
+    @JsonProperty("resourceURI")
+    public String resourceURI;
+    @JsonProperty("urls")
+    public List<Url> urls = new ArrayList<Url>();
+    @JsonProperty("thumbnail")
+=====================================================================
+Found a 9 line (29 tokens) duplication in the following files: 
+Starting at line 11 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CharacterList.java
+Starting at line 11 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\ComicList.java
+Starting at line 11 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CreatorList.java
+Starting at line 11 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\EventList.java
+Starting at line 11 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\SeriesList.java
+Starting at line 11 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\StorieList.java
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Generated("org.jsonschema2pojo")
+@JsonPropertyOrder({
+    "available",
+    "returned",
+    "collectionURI",
+    "items"
+})
+public class CharacterList {
+=====================================================================
+Found a 6 line (28 tokens) duplication in the following files: 
+Starting at line 37 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\controllers\MarvelCharactersController.java
+Starting at line 32 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\controllers\MarvelComicsController.java
+
+        return charactersService.findAllByComic(pId);
+    }
+
+    @RequestMapping(value = "/remove/{pId}", method = RequestMethod.DELETE)
+    public boolean removeById(@PathVariable int pId) {
+        return charactersService.remove(pId);
+=====================================================================
+Found a 8 line (27 tokens) duplication in the following files: 
+Starting at line 9 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CharacterSummary.java
+Starting at line 9 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CreatorSummary.java
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Generated("org.jsonschema2pojo")
+@JsonPropertyOrder({
+    "resourceURI",
+    "name",
+    "role"
+})
+public class CharacterSummary {
+=====================================================================
+Found a 10 line (26 tokens) duplication in the following files: 
+Starting at line 16 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CharacterSummary.java
+Starting at line 16 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\CreatorSummary.java
+
+public class CharacterSummary {
+
+    @JsonProperty("resourceURI")
+    public String resourceURI;
+    @JsonProperty("name")
+    public String name;
+    @JsonProperty("role")
+    public String role;
+
+}
+=====================================================================
+Found a 7 line (25 tokens) duplication in the following files: 
+Starting at line 9 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\ComicSummary.java
+Starting at line 9 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\EventSummary.java
+Starting at line 9 of C:\Program Files (x86)\GNU\SSH\git\marvelorchestrator\src\main\java\com\marvel\developer\models\SeriesSummary.java
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Generated("org.jsonschema2pojo")
+@JsonPropertyOrder({
+    "resourceURI",
+    "name"
+})
+public class ComicSummary {

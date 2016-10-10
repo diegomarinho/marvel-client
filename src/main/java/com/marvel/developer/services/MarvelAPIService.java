@@ -1,0 +1,27 @@
+package com.marvel.developer.services;
+
+import java.net.URI;
+
+/**
+ * @author diego.almeida
+ *
+ */
+public interface MarvelAPIService {
+
+	/**
+	 * Create a URI to Marvel's API using parameters.
+	 * 
+	 * @param pathURI
+	 *            a string thats represent a endpoint to use.
+	 * @return a URI
+	 */
+	URI buildFromMarvelPublicURI(String... pathURI);
+
+	/**
+	 * Create a URI to Marvel's API using a URI that not contains de parameters.
+	 * 
+	 * @param targetURI
+	 * @return
+	 */
+	URI buildAuthenticatedURI(URI targetURI);
+}

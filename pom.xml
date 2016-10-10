@@ -3,13 +3,12 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.br.camarllon</groupId>
-    <artifactId>marvelorchestrator</artifactId>
+    <groupId>com.marvel.developer</groupId>
+    <artifactId>marvel-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>marvel-api-orchestrator</name>
-    <description>A Orchestrator using Spring Cache and Rest Controlllers.</description>
+    <name>marvel-client-api</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -62,4 +61,6 @@
     </build>
 
 
+    <url>http://developer.marvel.com/</url>
+    <description>Uses Marvel REST API to get the database of Marvel services.</description>
 </project>
