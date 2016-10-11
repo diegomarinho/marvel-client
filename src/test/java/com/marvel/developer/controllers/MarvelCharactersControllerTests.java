@@ -42,7 +42,6 @@ public class MarvelCharactersControllerTests {
     @Test
     public void testCharacterFindAllByComic() {
         List<Character> listCharacters = characterService.findAllByComic(MARVEL_COMIC_ID_AVENGERS_IRON_MAN_II);
-        //for(Character character : listCharacters){System.out.println(character.id + " - " + character.name);}
         assertFalse(listCharacters.isEmpty());
     }
 

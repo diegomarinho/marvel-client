@@ -31,7 +31,6 @@ public class MarvelComicsControllerTests {
     @Test
     public void testComicFindAll() {
         List<Comic> listComics = comicService.findAll();
-        //for(Comic comic : listComics){System.out.println(comic.id + " - " + comic.title);}
         assertFalse(listComics.isEmpty());
     }
 
